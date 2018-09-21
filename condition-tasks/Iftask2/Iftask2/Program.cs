@@ -22,6 +22,7 @@ namespace Iftask2
             }
             else
                 Console.WriteLine("Väärä syöte! ");
+      
 
 
         
