@@ -15,13 +15,14 @@ namespace Iftask2
             if (isNumber)
             {
 
-                if (number % 2 == 0)
-                    Console.WriteLine($"Luku {number} on parillinen.");
-                else
-                    Console.WriteLine($"Luku {number} on pariton.");
+                    if (number % 2 == 0)
+                        Console.WriteLine($"Luku {number} on parillinen.");
+                    else
+                        Console.WriteLine($"Luku {number} on pariton.");
             }
-            else
-                Console.WriteLine("Väärä syöte! ");
+                else
+                    Console.WriteLine("Väärä syöte! ");
+            
       
 
 
