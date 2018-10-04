@@ -17,31 +17,23 @@ namespace ticketprice
                 Console.Write("Oletko varusmies k/e ");
                 userInput = Console.ReadLine();
 
-                if
+            if (userInput == "k")
+            {
+                discount = 0.50;
+            }
 
-                     (userInput == "k")
-                    discount = 0.50;
-
-                else
-
-                    Console.Write("Oletko opiskelija k/e ");
+            else
+            {
+                Console.Write("Oletko opiskelija? k/e ");
                 userInput = Console.ReadLine();
-            
+            }
 
-                if
-
-                (userInput == "k")
-
-                    Console.Write("Oletko MTK jäsen k/e ");
+            if (userInput == "k")
+            {
+                Console.Write("Oletko MTK jäsen? k/e ");
                 userInput = Console.ReadLine();
+            }
 
-                if
-
-                (userInput == "k")
-                    discount = 0.60;
-
-                else
-                    discount = 0.45;
             
            Console.WriteLine($"Lipunhintasi on {ticketPrice - ticketPrice * discount} €");
 
