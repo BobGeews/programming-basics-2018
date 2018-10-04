@@ -13,9 +13,9 @@ namespace ticketprice
             double discount = 0.00; //ale
             int age = 0;
             string userInput;
-            
-                Console.Write("Oletko varusmies k/e ");
-                userInput = Console.ReadLine();
+
+            Console.Write("Oletko varusmies k/e ");
+            userInput = Console.ReadLine();
 
             if (userInput == "k")
             {
@@ -28,17 +28,27 @@ namespace ticketprice
                 userInput = Console.ReadLine();
             }
 
+
             if (userInput == "k")
             {
                 Console.Write("Oletko MTK jäsen? k/e ");
                 userInput = Console.ReadLine();
             }
 
-            
-           Console.WriteLine($"Lipunhintasi on {ticketPrice - ticketPrice * discount} €");
-
-
+            if (userInput == "k")
+            {
+                discount = 0.60;
             }
+
+            else
+            {
+                discount = 0.45;
+            }
+
+            Console.WriteLine($"Lipunhintasi on {ticketPrice - ticketPrice * discount} €");
+        }
+
+            
         }
     }
 
