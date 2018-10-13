@@ -8,7 +8,8 @@ namespace LoopTask4_3
         {
             Console.WriteLine("Tämä ohjelma sijoittaa satunnaislukuja väliltä 0-50 siten että jokaisella rivillä on 5 lukua.");
             Random rnd = new Random();
-
+            
+            
             int rnd1 = rnd.Next(50);
             int rnd2 = rnd.Next(50);
             int rnd3 = rnd.Next(50);
@@ -29,6 +30,7 @@ namespace LoopTask4_3
             int rnd18 = rnd.Next(50);
             int rnd19 = rnd.Next(50);
             int rnd20 = rnd.Next(50);
+            
 
             Console.WriteLine($"Rivi 1: {rnd1}, {rnd2}, {rnd3}, {rnd4}, {rnd5}");
             Console.WriteLine($"Rivi 2: {rnd6}, {rnd7}, {rnd8}, {rnd9}, {rnd10}");
