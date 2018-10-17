@@ -6,7 +6,26 @@ namespace Functions1_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PrintStars();
+            Console.WriteLine();
+        }
+        public static void PrintStars()
+        {
+            Console.Write("Kirjota luku:");
+            string input = Console.ReadLine();
+            int luku;
+            int.TryParse(input, out luku);
+            if (luku < 0)
+            {
+                Console.WriteLine("Syöte on virheellinen.");
+            }
+            else
+            {
+                for (int i = 0; i < luku; i++)
+                {
+                    Console.Write("*");
+                }
+            }
         }
     }
 }
