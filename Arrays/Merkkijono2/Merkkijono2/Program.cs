@@ -6,7 +6,10 @@ namespace Merkkijono2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Tämä ohjelma muuttaa kaikki e kirjaimet @ merkeiksi.");
+            Console.Write("kirjoita jotain: ");
+            string userInput = Console.ReadLine();
+            Console.WriteLine(userInput.Replace("e", "@"));
         }
     }
 }
