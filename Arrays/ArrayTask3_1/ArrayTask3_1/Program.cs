@@ -6,13 +6,19 @@ namespace ArrayTask3_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ohjelma joka arpoo taulukkoon lukuja 0-20 väliltä.");
+            Console.WriteLine("Tämä ohjelma tulostaa taulukon.");
             int[] taulukko = new int[10];
+            Rndtaulukko(ref taulukko);
+        }
+
+        static void Rndtaulukko(ref int[] taulukko1)
+        {
             Random rnd = new Random();
 
-            for (int i = 0; i < taulukko.Length; i++)
+            for (int i = 0; i < taulukko1.Length; i++)
             {
-                taulukko[i] = rnd.Next(20);              
+                taulukko1[i] = rnd.Next(21);
+                Console.WriteLine($"{i}.\t{taulukko1[i]:d2}");
             }
         }
     }
