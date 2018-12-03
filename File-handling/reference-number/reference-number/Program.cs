@@ -20,7 +20,18 @@ namespace reference_number
                 {
                     case "Q":
                         {
+                            //////WARNING//////SHIT CODE BELOW
+                            string multipliers = "7, 3, 1";
+                            Console.Write("Syötä viitenumero ");
+                            string userInput = Console.ReadLine();
+
+                            int[] referenceNumber = new int[userInput.Length];
+                            char lastNumber = userInput[userInput.Length - 1];
+                            userInput = userInput.Remove(userInput.Length, 1);
+
                             
+
+
 
 
 
